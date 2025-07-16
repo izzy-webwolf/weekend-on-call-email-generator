@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekend On-Call Developer SOP</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        /* Custom scrollbar for textareas */
+        textarea::-webkit-scrollbar {
+            width: 8px;
+        }
+        textarea::-webkit-scrollbar-track {
+            background: #e0e0e0;
+            border-radius: 10px;
+        }
+        textarea::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+        textarea::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-8 lg:p-10">
+
+    <div class="max-w-4xl mx-auto bg-white p-6 sm:p-8 rounded-lg shadow-xl">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-6">Weekend On-Call Developer SOP</h1>
+        <p class="text-gray-600 text-center mb-8">
+            This interactive guide helps Channel Automation LLC developers follow the weekend on-call procedure and generate external communication emails.
+        </p>
+
+        <!-- Interactive Checklist Section -->
+        <div class="mb-10 p-6 bg-blue-50 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-blue-800 mb-4">Weekend Duty Execution Checklist</h2>
+            <p class="text-gray-700 mb-4">Mark items as complete as you progress through your weekend duties.</p>
+
+            <div class="space-y-6">
+                <!-- Milestone Tasks Section -->
+                <div class="p-4 bg-blue-100 rounded-md shadow-inner">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Milestone Tasks</h3>
+                    <div class="space-y-4">
+                        <!-- Beginning of Day Report -->
+                        <label class="flex items-center p-3 bg-white rounded-md shadow-sm cursor-pointer hover:bg-blue-200 transition-colors duration-200">
+                            <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-3 text-lg text-gray-800 font-medium">Beginning of Day Report (Saturday & Sunday): Announce availability in Teams (e.g., "On-call developer [Your Name] is online and ready for duty.")</span>
+                            <span class="ml-auto text-sm text-gray-500">(e.g., 9:00 AM local time)</span>
+                        </label>
+
+                        <!-- End of Day Report -->
+                        <label class="flex items-center p-3 bg-white rounded-md shadow-sm cursor-pointer hover:bg-blue-200 transition-colors duration-200">
+                            <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-3 text-lg text-gray-800 font-medium">Submit comprehensive End of Day Report (Saturday & Sunday)</span>
+                            <span class="ml-auto text-sm text-gray-500">(e.g., 5:00 PM local time)</span>
+                        </label>
+
+                        <!-- Asana Documentation Check -->
+                        <label class="flex items-center p-3 bg-white rounded-md shadow-sm cursor-pointer hover:bg-blue-200 transition-colors duration-200">
+                            <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-3 text-lg text-gray-800 font-medium">Ensure all details are documented in respective Asana tickets</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Ongoing Daily Tasks Section -->
+                <div class="p-4 bg-blue-100 rounded-md shadow-inner">
+                    <h3 class="text-xl font-semibold text-blue-700 mb-3">Ongoing Daily Tasks</h3>
+                    <div class="space-y-4">
+                        <!-- Issue Monitoring & Resolution -->
+                        <label class="flex items-center p-3 bg-white rounded-md shadow-sm cursor-pointer hover:bg-blue-200 transition-colors duration-200">
+                            <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-3 text-lg text-gray-800 font-medium">Actively monitor for incoming issues/alerts</span>
+                        </label>
+                        <label class="flex items-center p-3 bg-white rounded-md shadow-sm cursor-pointer hover:bg-blue-200 transition-colors duration-200">
+                            <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-3 text-lg text-gray-800 font-medium">Log all issues (new or existing) as a ticket in Asana</span>
+                        </label>
+                        <label class="flex items-center p-3 bg-white rounded-md shadow-sm cursor-pointer hover:bg-blue-200 transition-colors duration-200">
+                            <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-3 text-lg text-gray-800 font-medium">Investigate and address all reported issues</span>
+                        </label>
+
+                        <!-- Handling Urgent Issues -->
+                        <label class="flex items-center p-3 bg-white rounded-md shadow-sm cursor-pointer hover:bg-blue-200 transition-colors duration-200">
+                            <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-3 text-lg text-gray-800 font-medium">Take immediate action on critical/urgent issues</span>
+                        </label>
+                        <label class="flex items-center p-3 bg-white rounded-md shadow-sm cursor-pointer hover:bg-blue-200 transition-colors duration-200">
+                            <input type="checkbox" class="form-checkbox h-5 w-5 text-blue-600 rounded focus:ring-blue-500">
+                            <span class="ml-3 text-lg text-gray-800 font-medium">Document urgent issue resolution thoroughly in Asana ticket and End of Day Report</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Email Generator Section -->
+        <div class="p-6 bg-green-50 rounded-lg shadow-md">
+            <h2 class="text-2xl font-semibold text-green-800 mb-4">External Stakeholder Communication Email Generator</h2>
+            <p class="text-gray-700 mb-4">Use this tool to quickly generate emails for external stakeholders when an issue impacts them.</p>
+
+            <div class="mb-4">
+                <label for="issueName" class="block text-gray-700 text-sm font-bold mb-2">Issue Name:</label>
+                <input type="text" id="issueName" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="e.g., Website Downtime, API Latency">
+            </div>
+
+            <div class="mb-4">
+                <label for="technicalDetails" class="block text-gray-700 text-sm font-bold mb-2">Technical Issue Details:</label>
+                <textarea id="technicalDetails" rows="3" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="e.g., Database connection pool exhausted, causing 500 errors on checkout."></textarea>
+                <button id="generateNonTechnicalBtn" class="mt-2 bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline transition-colors duration-200 shadow-lg">
+                    ✨ Generate Non-Technical Description
+                </button>
+                <div id="loadingIndicator" class="mt-2 text-sm text-purple-700 hidden">Generating...</div>
+            </div>
+
+            <div class="mb-4">
+                <label for="nonTechnicalDescription" class="block text-gray-700 text-sm font-bold mb-2">Brief, Non-Technical Description (focus on impact):</label>
+                <textarea id="nonTechnicalDescription" rows="3" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="e.g., Our online checkout system is currently experiencing intermittent issues, preventing some customers from completing purchases."></textarea>
+            </div>
+
+            <div class="mb-4">
+                <label for="stakeholderName" class="block text-gray-700 text-sm font-bold mb-2">Stakeholder Name:</label>
+                <input type="text" id="stakeholderName" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="e.g., Valued Customer, Partner Company">
+            </div>
+
+            <div class="mb-6">
+                <label for="timeframe" class="block text-gray-700 text-sm font-bold mb-2">Update Timeframe (e.g., 2 hours, 4 hours, upon major progress):</label>
+                <input type="text" id="timeframe" class="shadow appearance-none border rounded-md w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent" placeholder="e.g., 2 hours, upon major progress">
+            </div>
+
+            <button id="generateEmailBtn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline transition-colors duration-200 shadow-lg">
+                Generate Email
+            </button>
+
+            <div id="emailOutputContainer" class="mt-8 hidden">
+                <h3 class="text-xl font-semibold text-gray-800 mb-3">Generated Email:</h3>
+                <textarea id="generatedEmail" rows="10" class="w-full p-4 border rounded-md bg-gray-50 text-gray-800 resize-y shadow-inner focus:outline-none focus:ring-2 focus:ring-green-500" readonly></textarea>
+                <button id="copyEmailBtn" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline transition-colors duration-200 shadow-lg">
+                    Copy to Clipboard
+                </button>
+                <div id="copyMessage" class="text-sm text-green-700 mt-2 hidden">Copied to clipboard!</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const generateEmailBtn = document.getElementById('generateEmailBtn');
+            const issueNameInput = document.getElementById('issueName');
+            const technicalDetailsInput = document.getElementById('technicalDetails');
+            const nonTechnicalDescriptionInput = document.getElementById('nonTechnicalDescription');
+            const stakeholderNameInput = document.getElementById('stakeholderName');
+            const timeframeInput = document.getElementById('timeframe');
+            const generatedEmailTextarea = document.getElementById('generatedEmail');
+            const emailOutputContainer = document.getElementById('emailOutputContainer');
+            const copyEmailBtn = document.getElementById('copyEmailBtn');
+            const copyMessage = document.getElementById('copyMessage');
+            const generateNonTechnicalBtn = document.getElementById('generateNonTechnicalBtn');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+
+            // Function to call Gemini API for non-technical description
+            generateNonTechnicalBtn.addEventListener('click', async () => {
+            const technicalDetails = technicalDetailsInput.value.trim();
+            if (!technicalDetails) {
+                alert('Please enter technical issue details to generate a non-technical description.');
+                return;
+            }
+
+            loadingIndicator.classList.remove('hidden');
+            generateNonTechnicalBtn.disabled = true;
+
+            try {
+                const response = await fetch('/generate-description', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ technicalDetails })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to generate description. Please try again.');
+                }
+
+                const result = await response.json();
+                nonTechnicalDescriptionInput.value = result.description.trim();
+            } catch (error) {
+                console.error('Error calling backend:', error);
+                alert('An error occurred while generating the description. Please check your network connection or try again later.');
+            } finally {
+                loadingIndicator.classList.add('hidden');
+                generateNonTechnicalBtn.disabled = false;
+            }
+        });
+
+
+            // Function to generate the email
+            generateEmailBtn.addEventListener('click', () => {
+                const issueName = issueNameInput.value.trim();
+                const stakeholderName = stakeholderNameInput.value.trim();
+                const timeframe = timeframeInput.value.trim();
+                const nonTechnicalDescription = nonTechnicalDescriptionInput.value.trim(); // Use the generated description
+
+                if (!issueName || !stakeholderName || !timeframe || !nonTechnicalDescription) {
+                    alert('Please fill in all fields, including the non-technical description, to generate the email.');
+                    return;
+                }
+
+                const emailSubject = `${issueName} - Update`;
+                const emailBody = `Dear ${stakeholderName},\n\n${nonTechnicalDescription} Our team is actively working to resolve it as quickly as possible.\n\nWe will provide further updates every ${timeframe} until the issue is fully resolved.\n\nThank you for your understanding and patience.\n\nSincerely,\n[Your Name/Channel Automation LLC]`;
+
+                generatedEmailTextarea.value = `Subject: ${emailSubject}\n\n${emailBody}`;
+                emailOutputContainer.classList.remove('hidden');
+                copyMessage.classList.add('hidden'); // Hide previous copy message
+            });
+
+            // Function to copy email to clipboard
+            copyEmailBtn.addEventListener('click', () => {
+                generatedEmailTextarea.select();
+                try {
+                    document.execCommand('copy');
+                    copyMessage.classList.remove('hidden');
+                    setTimeout(() => copyMessage.classList.add('hidden'), 2000); // Hide message after 2 seconds
+                } catch (err) {
+                    console.error('Failed to copy text: ', err);
+                    // Fallback for browsers where execCommand might not work or is deprecated
+                    alert('Failed to copy email. Please copy it manually.');
+                }
+            });
+        });
+
+        // Simple alert replacement for demonstration
+        function alert(message) {
+            const alertBox = document.createElement('div');
+            alertBox.className = 'fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50';
+            alertBox.innerHTML = `
+                <div class="bg-white p-6 rounded-lg shadow-xl max-w-sm w-full text-center">
+                    <p class="text-gray-800 text-lg mb-4">${message}</p>
+                    <button class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:shadow-outline transition-colors duration-200" onclick="this.parentElement.parentElement.remove()">
+                        OK
+                    </button>
+                </div>
+            `;
+            document.body.appendChild(alertBox);
+        }
+    </script>
+</body>
+</html>
